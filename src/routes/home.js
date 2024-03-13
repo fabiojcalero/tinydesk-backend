@@ -8,8 +8,6 @@ router.get("/", async (req, res) => {
   try {
     if (!req.user) {
       res.send("no uid");
-      console.log("No user on request!");
-      console.log(req.user);
     } else {
       const userId = req.user._id;
       const cookieValue = cookie.parse(req.headers.cookie)[

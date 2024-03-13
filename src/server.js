@@ -67,7 +67,7 @@ app.use(
       httpOnly: false,
 
       // 2nd change.
-      secure: false,
+      secure: process.env.NODE_ENV === "production",
       sameSite: "",
       // sameSite: process.env.NODE_ENV === "production" ? "none" : "",
     },
