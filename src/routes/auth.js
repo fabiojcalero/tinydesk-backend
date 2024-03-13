@@ -115,7 +115,7 @@ router.get(
     if (NODE_ENV === "production") {
       return res.redirect("https://www.tinydesk.me/home");
     } else {
-      return res.redirect("http://www.localhost:8000/home");
+      return res.redirect("http://localhost:8000/home");
     }
   }
 );
@@ -127,7 +127,7 @@ router.get(
     if (NODE_ENV === "production") {
       return res.redirect("https://www.tinydesk.me/home");
     } else {
-      return res.redirect("http://www.localhost:8000/home");
+      return res.redirect("http://localhost:8000/home");
     }
   }
 );
