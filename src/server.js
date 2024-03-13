@@ -68,7 +68,8 @@ app.use(
 
       // 2nd change.
       secure: false,
-      sameSite: process.env.NODE_ENV === "production" ? "none" : "",
+      sameSite: "",
+      // sameSite: process.env.NODE_ENV === "production" ? "none" : "",
     },
     store: sessionStore,
   })
