@@ -1,6 +1,6 @@
 const cors = require("cors");
 
-const whitelist = ["https://www.tinydesk.me", "https://tinydesk.me", "http://localhost:8000"];
+const whitelist = ["https://www.tinydesk.me", "https://tinydesk.me"];
 //If
 const corsOptions = {
   origin:
