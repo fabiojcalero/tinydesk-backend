@@ -1,4 +1,3 @@
-const passport = require("passport");
 const bcrypt = require("bcryptjs");
 const localStrategy = require("passport-local").Strategy;
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
@@ -18,7 +17,7 @@ if (NODE_ENV == "production") {
   callback_url = "http://localhost:4000/google/callback";
 }
 
-module.exports = function () {
+module.exports = function (passport) {
   passport.serializeUser((user, done) => {
     done(null, user.id);
   });

@@ -76,7 +76,7 @@ app.use(
 
 app.use(passport.initialize());
 app.use(passport.session());
-passportConfig();
+passportConfig(passport);
 
 //-------------------------------------------------------
 //Routers Middleware goes here
