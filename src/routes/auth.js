@@ -121,6 +121,7 @@ router.get(
     passport.authenticate("google", { scope: ["profile", "email"] }),
     function (req, res) {
         if (NODE_ENV === "production") {
+            console.log("We are logging from /google");
             return res.redirect("https://www.tinydesk.me/home");
         } else {
             return res.redirect("http://localhost:8000/home");
@@ -133,6 +134,7 @@ router.get(
     passport.authenticate("google", { failureRedirect: "/loginFailure" }),
     function (req, res) {
         if (NODE_ENV === "production") {
+            console.log("We are logging from /google/callback");
             return res.redirect("https://www.tinydesk.me/home");
         } else {
             return res.redirect("http://localhost:8000/home");
