@@ -133,7 +133,7 @@ router.get(
     passport.authenticate("google", { failureRedirect: "/loginFailure" }),
     function (req, res) {
         if (NODE_ENV === "production") {
-            return res.redirect("https://tinydesk.me/home");
+            return res.redirect("https://www.tinydesk.me/home");
         } else {
             return res.redirect("http://localhost:8000/home");
         }
