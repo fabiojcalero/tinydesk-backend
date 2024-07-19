@@ -128,7 +128,7 @@ module.exports = function (passport) {
                                 id: 1,
                                 name: "Santo Domingo",
                                 state: "",
-                                country: "DR",
+                                country: "DO",
                                 coord: {
                                     lon: -69.95,
                                     lat: 18.4667,
